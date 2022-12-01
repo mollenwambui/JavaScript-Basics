@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revision</title>
+</head>
+<body>
+    <script>
+        // palindrome in javascript
+        function validatePalindrome(str){
+            const len=String.length
+            for(let i=0;i<len/2;i++){
+                if(String[i]!==String[len -1 -i]){
+                    console.log("Not a palindrome")
+                }
+            else{
+                console.log("Palindrome")
+            }
+               
+            }
+            
+        }
+        validatePalindrome("madam")
+
+        function checkPalindrome(word){
+            splitword=word.split()
+            reversedword=splitword.reverse()
+            joinedword=reversedword.join()
+            if (word==joinedword){
+                console.log("Palindrome")
+            }
+            else{
+                console.log("Not Palindrome")
+            }
+
+        }
+        checkPalindrome("level")
+
+        function userInputs(){
+         var name=window.prompt("Enter your name")
+         if (name=="Mollen"){
+            document.write("congratulations! you guessed it right")
+         }
+         else{
+             document.write("Wrong guess! try again")
+         }
+        }
+     userInputs()
+
+       function ternaryOperator(age){
+           
+           var a =(age<18)?'Minor':'Adult'
+           console.log(a)
+       }
+       ternaryOperator(20)
+// mapping in javascript
+    //    const numbers=[65,44,12,4]
+    //    const newArr=numbers.map(myFunction)
+    //    function myFunction(num){
+    //        return num*10
+    //    }
+    //    console.log(newArr)
+    //    (myFunction)
+
+
+    //    Accessing elements in a nested object
+    const student={
+        name:'Mollen',
+        age:20,
+        marks:{
+            science:70,
+            math:75
+
+        }
+    }
+    console.log(student.marks);
+    console.log(student.marks.science);
+    </script>
+</body>
+</html>

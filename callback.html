@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback functions</title>
+</head>
+<body>
+    <script>
+        // call back functions in js
+        function greet(name,callback){
+            console.log('Hi'+' '+name)
+            callback()
+        }
+        function callme(){
+            console.log('Im callback function')
+        }
+        greet('peter',callme)
+
+        
+        function greeting(){
+            console.log('Hello world')
+        }
+        function sayName(name){
+            console.log('Hello'+ ' '+name)
+        }
+        setTimeout(greeting,2000)
+        sayName("Mollen")
+    </script>
+</body>
+</html>
